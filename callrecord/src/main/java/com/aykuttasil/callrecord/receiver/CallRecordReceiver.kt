@@ -20,7 +20,7 @@ open class CallRecordReceiver(private var callRecord: CallRecord) : PhoneCallRec
         private var recorder: MediaRecorder? = null
     }
 
-    private var audioFile: File? = null
+    var audioFile: File? = null
     private var isRecordStarted = false
 
     override fun onIncomingCallReceived(context: Context, number: String?, start: Date) {

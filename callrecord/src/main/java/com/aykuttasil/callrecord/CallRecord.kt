@@ -12,7 +12,7 @@ import com.aykuttasil.callrecord.service.CallRecordService
 import timber.log.Timber
 
 class CallRecord private constructor(private val mContext: Context) {
-    private var mCallRecordReceiver: CallRecordReceiver? = null
+    var mCallRecordReceiver: CallRecordReceiver? = null
 
     val stateSaveFile: Boolean
         get() = PrefsHelper.readPrefBool(mContext, PREF_SAVE_FILE)
